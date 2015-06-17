@@ -90,7 +90,7 @@ function processForm(formObject) {
 
 // returns a readable object
 function returnData(){
-  return JSON.stringify(finalData, null, "\t")
+  return JSON.stringify(finalData, null, 4)
 }
 
 

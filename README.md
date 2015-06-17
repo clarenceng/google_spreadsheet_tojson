@@ -8,6 +8,26 @@ Google Sheets to JSON (for translations)
 
 Takes selected columns and turns it into a json file
 I made it, because my translations are managed by Google Sheets
+ 
+| KEY           | ENGLISH       | FRENCH   |
+| ------------- |:-------------:| --------:|
+| GLOBAL.1      | one           | une      |
+| GLOBAL.TWO.1  | two one       | duex une |
+| GLOBAL.TWO.2  | one two       | une duex |
+
+OUTPUT when choosing KEY and FRENCH
+
+{
+    "GLOBAL" : {
+      "1" : "une",
+
+      "TWO" : {
+        "1" : "duex une",
+        "2" : "une duex"
+    }
+  }
+}
+
 
 ### How to use it
 
