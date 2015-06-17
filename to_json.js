@@ -55,7 +55,9 @@ function getColumnData(numbers) {
     for (var j = 0; j < numbers.length; j++) {
       objectItem.push(data[i][numbers[j]]);
     }
-    object[objectItem[0]] = objectItem[1]
+    if(objectItem[1] != "") {
+      object[objectItem[0]] = objectItem[1]
+    }
   }
   return object
 }
