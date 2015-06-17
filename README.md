@@ -34,3 +34,5 @@ It only accepts 2 columns.
 
 You can change getColumnData() if you need more.
 
+It will remove the entry if there is no string
+
