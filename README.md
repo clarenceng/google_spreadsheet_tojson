@@ -2,7 +2,7 @@ Google Sheets to JSON (for translations)
 ============
 
 ![Image of menu]
-(https://github.com/clarenceng/google_spreadsheet_tojson/json.png)
+(https://github.com/clarenceng/google_spreadsheet_tojson/blob/master/json.png)
 
 ### What it does?
 
