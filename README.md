@@ -16,7 +16,7 @@ I made it, because my translations are managed by Google Sheets
 | GLOBAL.TWO.2  | one two       | une duex |
 
 OUTPUT when choosing KEY and FRENCH
-
+```
 {
     "GLOBAL" : {
       "1" : "une",
@@ -27,7 +27,7 @@ OUTPUT when choosing KEY and FRENCH
     }
   }
 }
-
+```
 
 ### How to use it
 
