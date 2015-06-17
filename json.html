@@ -1,0 +1,17 @@
+<b>Choose the columns you want to export as JSON (2 max)</b>
+<br><br>
+
+<div>
+
+<form id="myForm">
+  <? var titles = getColumnTitles();
+   for (var i = 0; i < titles.length; i++) { ?>
+      <input type="checkbox" name="<?= i ?>"/>
+      <label for="<?= i ?>"><?= titles[i] ?></label>
+      <br/>
+  <? } ?>
+  <br/><br/>
+  <input type="button" value="Submit" onclick="google.script.run
+  .processForm(this.parentNode)" />
+</form>
+<div>
