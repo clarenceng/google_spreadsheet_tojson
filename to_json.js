@@ -10,7 +10,7 @@ function onOpen() {
 }
 
 // grabs the html file and allows it to run inline code
-function doGet() {    
+function doGet() {
   var html = HtmlService
       .createTemplateFromFile('json')
       .evaluate()
@@ -30,7 +30,7 @@ function getColumnTitles() {
 //convert into usable format
 function unflatten(data){
     if (Object(data) !== data || Array.isArray(data)) return data;
-    var regex = /\.?([^.\[\]]+)|\[(\d+)\]/g,
+    var regex = /\.?([^\[\]]+)|\[(\d+)\]/g,
         resultholder = {};
     for (var p in data) {
         var cur = resultholder,
@@ -79,10 +79,10 @@ function processForm(formObject) {
   for (x in formObject) {
     columnArr.push(x);
   }
-  
+
   var usableFormat = getColumnData(columnArr)
-  
-  
+
+
   finalData = unflatten(usableFormat)
 
   showOutput()
@@ -92,6 +92,3 @@ function processForm(formObject) {
 function returnData(){
   return JSON.stringify(finalData, null, 4)
 }
-
-
-    
