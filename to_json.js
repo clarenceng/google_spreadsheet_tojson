@@ -30,7 +30,7 @@ function getColumnTitles() {
 //convert into usable format
 function unflatten(data){
     if (Object(data) !== data || Array.isArray(data)) return data;
-    var regex = /\.?([^\[\]]+)|\[(\d+)\]/g,
+    var regex = /\.?([^.\[\]]+)|\[(\d+)\]/g,
         resultholder = {};
     for (var p in data) {
         var cur = resultholder,
